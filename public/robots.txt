@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://astro-demo.sampacker.com/sitemap-index.xml

@@ -1,0 +1,7 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+/* Override the button class to style them differently */
+.btn:not(.btn-ghost) {
+    @apply btn-soft rounded-lg
+}

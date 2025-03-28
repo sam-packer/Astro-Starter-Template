@@ -1,0 +1,47 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Job from "../components/Job.astro";
+---
+
+<Layout title="My Portfolio - Experience">
+    <h1 class="text-4xl font-bold mb-6 text-primary">Professional Experience</h1>
+
+    <div class="space-y-6 mb-10">
+        <Job
+                title="Frontend Developer"
+                company="Company A"
+                dates="Jan 2022 – Present"
+                location="Remote"
+        />
+        <Job
+                title="UI/UX Designer"
+                company="Company B"
+                dates="Jun 2020 – Dec 2021"
+                location="New York, NY"
+        />
+        <Job
+                title="Software Engineering Intern"
+                company="Company C"
+                dates="Summer 2019"
+                location="San Francisco, CA"
+        />
+    </div>
+
+    <div class="divider"/>
+
+    <h1 class="text-4xl font-bold my-6 text-primary">Skills</h1>
+    <ul class="list-disc list-inside grid grid-cols-2 lg:grid-cols-4 text-lg gap-y-2 text-base-content/80">
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Node.js</li>
+        <li>Python</li>
+        <li>TypeScript</li>
+        <li>SQL</li>
+        <li>Tailwind CSS</li>
+        <li>Docker</li>
+        <li>Git</li>
+        <li>GraphQL</li>
+        <li>Next.js</li>
+        <li>Firebase</li>
+    </ul>
+</Layout>
