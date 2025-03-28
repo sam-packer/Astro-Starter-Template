@@ -95,7 +95,7 @@ Projects are styled with a soft background (`bg-base-200`) and spacing to stand 
 
 ---
 
-### `Experience.astro`
+### `Job.astro`
 
 Reusable card for listing professional experience or internships.
 
@@ -109,7 +109,7 @@ Reusable card for listing professional experience or internships.
 **Usage:**
 
 ```astro
-<Experience 
+<Job 
   title="Frontend Developer" 
   company="Company A" 
   dates="Jan 2022 – Present" 
