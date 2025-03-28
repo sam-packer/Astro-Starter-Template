@@ -1,18 +1,28 @@
 ---
+import Footer from "../components/Footer.astro";
+import BaseHead from "../components/BaseHead.astro";
 import Navbar from '../components/Navbar.astro'
-import { ClientRouter } from "astro:transitions";
+
+import {ClientRouter} from "astro:transitions";
 
 import "../styles/global.css";
-import Footer from "../components/Footer.astro";
-const {title} = Astro.props;
+
+const {title, description, image, type} = Astro.props;
 ---
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- The head links are in a separate component to reduce clutter.
+    Please don't worry about changing anything there. A lot of the data is so
+    social media sites can generate rich previews of your website -->
+    <BaseHead title={title} description={description} image={image} type={type}/>
+
+    <!-- Site title -->
     <title>{title}</title>
+
+    <!-- View transitions, smooth fading between pages -->
     <ClientRouter/>
 </head>
 

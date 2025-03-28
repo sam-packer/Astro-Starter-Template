@@ -33,21 +33,39 @@ pnpm run dev
 
 Visit `http://localhost:4321` in your browser.
 
----
-
 ## 🧩 Components Overview
 
 ### `Layout.astro`
 
-A basic layout wrapper that provides a page title and consistent styling across pages.
+This is the main layout wrapper used across all pages. It handles:
+
+- The site-wide layout (navbar, footer, spacing)
+- Page metadata (title, description, Open Graph, etc.)
+- Smooth page transitions using Astro's built-in router
+
+It passes metadata to `<BaseHead />` to help social media platforms display rich previews when your site is shared.
+
+**Props:**
+
+- `title` – Page title (required)
+- `description` – Meta description for search engines/social previews (required)
+- `image` – Optional Open Graph image URL (defaults to your headshot)
+- `type` – Open Graph type (defaults to `"website"`)
 
 **Usage:**
 
 ```astro
-<Layout title="Page Title">
-  <!-- Your content here -->
+<Layout
+  title="My Portfolio - Home"
+  description="A student-friendly portfolio template built with Astro."
+  image="https://example.com/og-image.png"
+  type="website"
+>
+  <!-- Page content goes here -->
 </Layout>
 ```
+
+> 🧠 Heads up: You don’t need to touch the `<BaseHead />` directly — it’s handled internally by the layout.
 
 ---
 
