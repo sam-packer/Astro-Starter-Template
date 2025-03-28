@@ -3,9 +3,11 @@ const { title, company, dates, location } = Astro.props;
 ---
 
 <div class="bg-base-200 p-4 rounded-xl shadow-sm">
-    <h2 class="text-lg font-semibold text-secondary">{title}</h2>
-    <p class="text-sm text-base-content/60 italic mb-1">
-        {dates} • {location}
-    </p>
-    <p class="text-base-content/80">{company}</p>
+    <div class="flex flex-col gap-1">
+        <h2 class="text-xl font-semibold text-secondary">{title}</h2>
+        <p class="text-lg text-base-content/80">{company}</p>
+        <p class="text-sm text-base-content/60 italic">
+            {dates} • {location}
+        </p>
+    </div>
 </div>

@@ -1,8 +1,16 @@
 ---
-const { title, description } = Astro.props;
+const { title, description, href } = Astro.props;
+const isClickable = !!href;
 ---
 
-<div class="bg-base-200 p-4 rounded-xl shadow-sm">
+<a
+        href={href || "#"}
+        class={`block bg-base-200 p-4 rounded-xl shadow-sm transition hover:shadow-md hover:bg-base-300 ${
+            isClickable ? "cursor-pointer" : "cursor-default pointer-events-none"
+        }`}
+        target="_blank"
+        rel="noopener noreferrer"
+>
     <h2 class="text-lg font-semibold text-secondary">{title}</h2>
     <p class="text-base-content/80">{description}</p>
-</div>
+</a>
