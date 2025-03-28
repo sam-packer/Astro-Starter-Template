@@ -33,6 +33,8 @@ pnpm run dev
 
 Visit `http://localhost:4321` in your browser.
 
+---
+
 ## 🧩 Components Overview
 
 ### `Layout.astro`

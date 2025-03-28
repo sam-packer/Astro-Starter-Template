@@ -8,14 +8,15 @@ import headshot from "../assets/headshot.webp";
         title="My Portfolio - Home"
         description="The home page for my portfolio"
 >
-    <div class="flex flex-col-reverse md:flex-row items-center gap-10">
+    <div class="flex flex-col-reverse md:flex-row items-center gap-20">
 
         <!-- Section one: header, paragraph, social media links -->
         <div class="flex-1">
             <!-- Title -->
-            <h1 class="text-6xl font-bold mb-6 tracking-tight leading-tight">
-                Hey there, I’m <span class="text-primary whitespace-nowrap">[Your Name]</span>
-            </h1>
+            <h2 class="text-3xl font-bold tracking-tight leading-tight">
+                Hey there, I’m
+            </h2>
+            <h1 class="text-6xl font-bold mb-6 tracking-tight leading-tight text-primary whitespace-nowrap">[Your Name]</h1>
 
             <!-- Paragraph -->
             <p class="text-lg text-base-content/80 max-w-3xl mb-6">
@@ -73,7 +74,7 @@ import headshot from "../assets/headshot.webp";
             <Image
                     src={headshot}
                     alt="Portrait of [Your Name]"
-                    class="w-40 h-40 md:w-64 md:h-64 object-cover mask mask-circle shadow-md"
+                    class="w-48 h-48 md:w-72 md:h-72 object-cover mask mask-circle shadow-md"
             />
         </div>
     </div>
