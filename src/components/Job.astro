@@ -1,13 +1,23 @@
 ---
-const { title, company, dates, location } = Astro.props;
+const {title, company, dates, location} = Astro.props;
 ---
 
-<div class="bg-base-200 p-4 rounded-xl shadow-sm">
-    <div class="flex flex-col gap-1">
+<div class="collapse bg-base-200 border border-base-300 rounded-xl shadow-sm">
+    <input aria-label=`Show details about ${title}` type="checkbox"/>
+
+    <!-- Header always visible -->
+    <div class="collapse-title p-4">
         <h2 class="text-xl font-semibold text-secondary">{title}</h2>
         <p class="text-lg text-base-content/80">{company}</p>
         <p class="text-sm text-base-content/60 italic">
             {dates} • {location}
         </p>
+    </div>
+
+    <!-- Collapsible content -->
+    <div class="collapse-content">
+        <ul class="mt-2 list-disc list-inside space-y-1 text-base-content/90">
+            <slot/>
+        </ul>
     </div>
 </div>

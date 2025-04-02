@@ -6,7 +6,7 @@ import tailwindcss from "@tailwindcss/vite";
 // https://astro.build/config
 export default defineConfig({
     // Replace this with your domain
-    // Make sure you change the URL in /public/robots.txt as well!
+    // Make sure you change the URL in the /public/robots.txt file as well!
     site: "https://astro-demo.sampacker.com",
 
     integrations: [sitemap()],

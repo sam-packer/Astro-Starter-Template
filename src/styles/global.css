@@ -1,7 +1,14 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
-/* Override the button class to style them differently */
+/* Override the button class to style them differently.
+This makes the buttons softer and rounded. Feel free to
+remove this to see what buttons look like by default.
+Notice how we have the :not(.btn-ghost). Why?
+The navbar uses btn-ghost to have a button, but without the
+styling. See what happens if you remove it, you'll notice the
+buttons on the navbar look weird.
+*/
 .btn:not(.btn-ghost) {
     @apply btn-soft rounded-lg
 }

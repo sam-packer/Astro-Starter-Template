@@ -15,20 +15,54 @@ import Job from "../components/Job.astro";
                 company="Company A"
                 dates="Jan 2022 – Present"
                 location="Remote"
-        />
+        >
+            <li>Start each bullet point with a strong action verb (e.g., "Built," "Led," "Improved").</li>
+            <li>Focus on results and impact, not just tasks. Ask yourself: *What changed because of your work?*</li>
+            <li>Include numbers where possible such as percentages, dollars, time saved, etc.</li>
+            <li>Keep it concise and easy to scan. Imagine someone skimming your resume in 5 seconds.</li>
+        </Job>
+
         <Job
                 title="UI/UX Designer"
                 company="Company B"
                 dates="Jun 2020 – Dec 2021"
                 location="New York, NY"
-        />
+        >
+            The default design of this component doesn’t clearly indicate it’s clickable. This is intentional. Follow
+            the tips below to follow best design practices and indicate to the user it's clickable.
+
+            <li>
+                Add the class <code class="bg-base-300 px-1 rounded">collapse-arrow</code> to the same
+                <code class="bg-base-300 px-1 rounded">&lt;div class="collapse"&gt;</code> to include an arrow
+                indicator.
+            </li>
+            <li>
+                Make it visually interactive: change
+                <code class="bg-base-300 px-1 rounded">bg-base-200</code> to
+                <code class="bg-base-300 px-1 rounded">bg-base-300</code> on hover.
+            </li>
+            <li>
+                If you’re curious how to do that in Tailwind, search for:
+                <em>"how to change the state of a component in Tailwind when you're hovering over it"</em>
+                (hint: look into <code>hover:</code>, <code>group</code>, and <code>peer</code> utilities).
+            </li>
+            <li>There's also an example of it in the <code>Job.astro</code> component, so definitely look there for
+                inspiration.
+            </li>
+        </Job>
+
         <Job
                 title="Software Engineering Intern"
                 company="Company C"
                 dates="Summer 2019"
                 location="San Francisco, CA"
-        />
+        >
+            <li>Optimized React app with dynamic imports and code splitting, reducing load time by 35%.</li>
+            <li>Built a shared component library in TypeScript, cutting dev time for new features by 20%.</li>
+            <li>Improved end-to-end test coverage with Cypress, lowering QA-reported bugs by 50%.</li>
+        </Job>
     </div>
+
 
     <div class="divider"/>
 

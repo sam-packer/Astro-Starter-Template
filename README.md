@@ -21,11 +21,27 @@ cd student-portfolio
 
 ### 3. Install Dependencies
 
+This project uses `pnpm`. If you don't have `pnpm` installed, you should install it. Make sure you have Node.js
+installed on your computer. Then, type:
+
+```bash
+npm install --global corepack@latest
+corepack enable pnpm
+corepack use pnpm@latest-10
+```
+
+You can find full installation instructions [here.](https://pnpm.io/installation#using-corepack)
+
+Once you have `pnpm` installed, you can run this command to install the dependencies:
+
 ```bash
 pnpm install
 ```
 
 ### 4. Start the Development Server
+
+This will start a local development server where you can view your changes in real time. No need to refresh or rerun
+this command, changes are live.
 
 ```bash
 pnpm run dev
@@ -142,6 +158,8 @@ the front page if you desire.
 - Update links to your own GitHub and LinkedIn
 - Add or remove components as needed — the code is super modular
 - Change theme colors using the [DaisyUI Theme Generator](https://daisyui.com/theme-generator/)
+- Change the `Project.astro` component to use [daisyUI Cards](https://daisyui.com/components/card/#card)
+- 
 
 ---
 
@@ -154,7 +172,8 @@ Just connect your repo and let it auto deploy!
 
 ### 📦 Updating Dependencies
 
-Keeping your dependencies up to date ensures your project stays secure, compatible with modern tooling, and benefits from bug fixes and performance improvements.
+Keeping your dependencies up to date ensures your project stays secure, compatible with modern tooling, and benefits
+from bug fixes and performance improvements.
 
 #### 🔍 Check for outdated packages
 
@@ -174,7 +193,8 @@ To upgrade all outdated packages to their latest versions, run:
 pnpm update --latest
 ```
 
-This updates the `pnpm-lock.yaml` and ensures your project uses the most recent versions available. After updating, make sure everything still works by running:
+This updates the `pnpm-lock.yaml` and ensures your project uses the most recent versions available. After updating, make
+sure everything still works by running:
 
 ```bash
 pnpm run dev
