@@ -12,3 +12,13 @@ buttons on the navbar look weird.
 .btn:not(.btn-ghost) {
     @apply btn-soft rounded-lg
 }
+
+/* Signals a card or collapse class is clickable */
+.clickable {
+    @apply hover:shadow-md hover:dark:shadow-xl transition ease-in-out hover:scale-[102%]
+}
+
+/* This is used in the Navbar.astro component. It adds styling for the buttons in the navbar */
+.nav-item {
+    @apply btn btn-ghost btn-primary text-base font-medium rounded-full
+}

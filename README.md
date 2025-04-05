@@ -208,5 +208,18 @@ pnpm run dev
 
 This project is licensed under the [MIT License](LICENSE.md).
 
+### Attribution
+
+This portfolio template is open source and licensed under the MIT License — feel free to use, modify, and build on it
+however you like.
+
+If you find it helpful, a small credit in the footer like:
+
+> © [Your Name]. Built with a template by [Sam Packer](https://sampacker.com)
+
+…is very much appreciated. It helps support open source and lets others discover the template too. But of course, this
+is optional, and you can remove it if you wish.
+
 ---
+
 Made with ❤️ by Sam Packer using Astro + Tailwind + DaisyUI

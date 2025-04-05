@@ -1,11 +1,17 @@
-<nav class="bg-base-100 shadow-md">
-    <div class="max-w-6xl mx-auto px-4">
-        <div class="flex justify-between items-center h-16">
-            <div class="flex">
-                <a href="/" class="btn btn-ghost text-base font-medium">Home</a>
-                <a href="/experience" class="btn btn-ghost text-base font-medium">Experience</a>
-                <a href="/projects" class="btn btn-ghost text-base font-medium">Projects</a>
-            </div>
-        </div>
+---
+/*
+To keep things simple, there's only one Navbar component. This isn't responsive and will break the page
+if you add too many items. I intentionally left it simple to not overwhelm anyone. If you want this navbar that is
+responsive, take a look at the more advanced template at:
+https://github.com/sam-packer/Astro-Advanced-Template/tree/main/src/components
+*/
+---
+<nav class="w-full flex justify-center py-4">
+    <div class="bg-base-200 rounded-full shadow-md px-6">
+        <ul class="flex space-x-2">
+            <li><a href="/" class="nav-item">Home</a></li>
+            <li><a href="/experience" class="nav-item">Experience</a></li>
+            <li><a href="/projects" class="nav-item">Projects</a></li>
+        </ul>
     </div>
 </nav>
