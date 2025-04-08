@@ -156,10 +156,10 @@ the front page if you desire.
 
 - Replace `[Your Name]` with your actual name
 - Update links to your own GitHub and LinkedIn
-- Add or remove components as needed — the code is super modular
+- Update the experience page with your actual work experience
+- Update the projects page with your projects
 - Change theme colors using the [DaisyUI Theme Generator](https://daisyui.com/theme-generator/)
 - Change the `Project.astro` component to use [daisyUI Cards](https://daisyui.com/components/card/#card)
-- 
 
 ---
 
