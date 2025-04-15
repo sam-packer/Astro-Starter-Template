@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://astro-demo.sampacker.com/sitemap-index.xml
+Sitemap: https://astro-starter.sampacker.com/sitemap-index.xml

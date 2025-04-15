@@ -7,7 +7,7 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
     // Replace this with your domain
     // Make sure you change the URL in the /public/robots.txt file as well!
-    site: "https://astro-demo.sampacker.com",
+    site: "https://astro-starter.sampacker.com",
 
     integrations: [sitemap()],
     vite: {
