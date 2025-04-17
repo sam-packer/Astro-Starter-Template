@@ -11,11 +11,11 @@
   "dependencies": {
     "@astrojs/sitemap": "^3.3.0",
     "@tailwindcss/vite": "^4.1.4",
-    "astro": "^5.7.0",
+    "astro": "^5.7.3",
     "sharp": "^0.34.1",
     "tailwindcss": "^4.1.4"
   },
   "devDependencies": {
-    "daisyui": "^5.0.20"
+    "daisyui": "^5.0.25"
   }
 }
